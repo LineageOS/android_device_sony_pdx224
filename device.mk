@@ -6,6 +6,10 @@
 # AAPT
 PRODUCT_AAPT_PREF_CONFIG := xxhdpi
 
+# NFC
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/nfc/libnfc-nxp-typef.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-nxp-typef.conf
+
 # Overlay
 PRODUCT_PACKAGES += \
     FrameworkRes-PDX224-Overlay \
